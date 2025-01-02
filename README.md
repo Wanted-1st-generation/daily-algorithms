@@ -7,8 +7,10 @@
 - 평일, 주 5회 하루에 하나씩 백준 문제를 풀고 인증한다. github에 푼 문제를 매일 커밋을 한다.
     - 커밋을 하지 않으면 그날은 풀지 않은 것으로 간주한다.
     - [https://github.com/Wanted-1st-generation/daily-algorithms](https://github.com/Wanted-1st-generation/daily-algorithms)
+    - 조별로 생성되는 브랜치에 커밋한다.(main 커밋 금지!!!)
 - 스터디에서 제공하는 추천 문제 중 하나를 선정하여 풀거나, 팀끼리 상의 후 문제를 결정해서 푼다.
 - 팀원 모두 풀이가 끝나면 서로 코드 리뷰를 진행해 서로의 코드를 점검하고 개선한다.
+    - 코드 리뷰 기준: 코드 가독성, 알고리즘 효율성, 예외 처리 등
 
 ### 팀 활동
 
@@ -20,8 +22,8 @@
 
 - 모든 풀이 기록은 GitHub에 커밋하여 투명하게 관리됩니다.
 - 커밋 메시지 규칙
-    - feat: Solve_문제번호_문제제목
-    - fix: Update solution for 문제번호_문제제목
+    - feat: Solve_문제번호_문제제목_제출자이름
+    - fix: Update solution for 문제번호_문제제목_제출자이름
     - 문제번호는 001부터 시작해서 1씩 증가시킵니다.
 
 ### 목표
