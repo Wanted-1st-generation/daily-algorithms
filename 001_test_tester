@@ -1,0 +1,30 @@
+#include <iostream>
+
+class Printer {
+    public:
+    void ShowString() {
+        if(str == nullptr) {
+            std::cout << "Can't show the string value" << std::endl;
+            return;
+        } else {
+            std::cout << str << std::endl;
+        }
+    }
+    void SetString(char* str) {
+        this->str = str;
+    }
+    private:
+    char* str = nullptr;
+};
+
+int main()
+{
+	Printer printer;
+	printer.ShowString();
+	
+	printer.SetString("Hello C++");
+	printer.ShowString();
+	
+	printer.SetString("I Want to be a Good Developer");
+	printer.ShowString();
+}
