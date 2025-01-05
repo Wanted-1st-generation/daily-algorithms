@@ -25,8 +25,8 @@
 
 - 모든 풀이 기록은 GitHub에 커밋하여 투명하게 관리됩니다.
 - 커밋 메시지 규칙
-    - feat: Solve_문제번호_문제제목_제출자이름
-    - fix: Update solution for 문제번호_문제제목_제출자이름
+    - feat: Solve_문제번호_제출자이름
+    - fix: Update solution for 문제번호_제출자이름
     - 문제번호는 001부터 시작해서 1씩 증가시킵니다.
 
 ### 목표
