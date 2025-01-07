@@ -71,6 +71,7 @@ private:
 	int h;		// height
 };
 
+// 테스트용 코드
 void check2()
 {
 	int n;
