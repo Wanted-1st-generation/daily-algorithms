@@ -6,7 +6,7 @@ struct SinglyLinkedListNode
 	SinglyLinkedListNode* next;
 };
 
-SinglyLinkedListNode* reverse(SinglyLinkedListNode* head) {
+static SinglyLinkedListNode* reverse(SinglyLinkedListNode* head) {
 	SinglyLinkedListNode* prev = nullptr;
 	SinglyLinkedListNode* current = head;
 	SinglyLinkedListNode* next = nullptr;
