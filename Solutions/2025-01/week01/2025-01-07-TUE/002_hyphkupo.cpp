@@ -79,7 +79,7 @@ private:
 
 int Student::cur_id = 0;
 
-// 테스트용
+
 int main()
 {
     int n, val;
