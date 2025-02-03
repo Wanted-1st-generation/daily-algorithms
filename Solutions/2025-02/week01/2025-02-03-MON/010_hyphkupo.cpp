@@ -86,7 +86,7 @@ SinglyLinkedListNode* reverse(SinglyLinkedListNode* llist) {
     while (cur)
     {
         nxt = cur->next;
-        cur->next = pre;    // ¹æÇâ
+        cur->next = pre;    // direction
         pre = cur;
         cur = nxt;
     }
