@@ -1,0 +1,69 @@
+#include <iostream>
+
+struct Node {
+    int data;
+    Node* next;
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+class LinkedList {
+public:
+    Node* head;
+    LinkedList() : head(nullptr) {}
+    
+    void append(int val) {
+        Node* newNode = new Node(val);
+        if (!head) {
+            head = newNode;
+            return;
+        }
+        Node* temp = head;
+        while (temp->next) {
+            temp = temp->next;
+        }
+        temp->next = newNode;
+    }
+    
+    void printReverse(Node* node) {
+        if (!node) return;
+        printReverse(node->next);
+        std::cout << node->data << " ";
+    }
+    
+    void printReverse() {
+        printReverse(head);
+        std::cout << std::endl;
+    }
+    
+    ~LinkedList() {
+        Node* temp;
+        while (head) {
+            temp = head;
+            head = head->next;
+            delete temp;
+        }
+    }
+};
+
+int main() {
+    int listCount, elementCount, value;
+    std::cout << "링크드 리스트 개수 입력: ";
+    std::cin >> listCount;
+    
+    for (int i = 0; i < listCount; ++i) {
+        LinkedList list;
+        std::cout << "리스트 " << i + 1 << "의 요소 개수 입력: ";
+        std::cin >> elementCount;
+        
+        std::cout << "요소 입력: ";
+        for (int j = 0; j < elementCount; ++j) {
+            std::cin >> value;
+            list.append(value);
+        }
+        
+        std::cout << "역순 출력: ";
+        list.printReverse();
+    }
+    
+    return 0;
+}
